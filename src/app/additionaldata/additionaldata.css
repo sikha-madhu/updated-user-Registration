@@ -1,0 +1,30 @@
+.common-component{
+    
+    padding: 40px;
+    border: 2px solid black;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+/* alert msgs */
+#alert{
+    color: red;
+    font-size: 16px;
+}
+/* input field */
+input{
+    /* margin-right: 100px;
+    margin-left: 20px; */
+    height:35px;
+    width:40%;
+    font-size: 26px;
+}
+/* drop down  */
+select{
+    height: 35px;
+    width:40%;
+    font-size: 26px;
+}
+/* button{
+    width: 20px;
+} */

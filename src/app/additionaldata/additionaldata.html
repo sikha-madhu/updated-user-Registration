@@ -1,0 +1,20 @@
+
+    <form [formGroup]="form">
+        <div class="common-component">
+        
+            <!-- dropdown component -->
+    <select formControlName="dropDown">
+            <option [value]="'number'">Number</option>
+            <option [value]="'boolean'">Boolean</option>
+            <option [value]="'string'">String</option>
+            <option [value]="'Hexa Decimal'">Hexa Decimal</option>
+            <option [value]="'binary'">Binary</option>
+    </select>&nbsp;&nbsp;
+    <!-- input field for additional data value -->
+    <input type="text" formControlName="addInfo" (keyup.enter)="updateInfoValue()"/>
+    
+</div>
+</form>
+    
+
+<div *ngIf="showError" id="alert">Enter correct value of selected type</div>
